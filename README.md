@@ -13,7 +13,7 @@ apt update && apt install -y nginx certbot python3-certbot-nginx git
 ### 2. Repo klonen
 
 ```bash
-git clone https://github.com/jukkler/sozialindex.git /var/www/sozialindex
+git clone https://github.com/lukasziesemer/sozialindex.git /var/www/sozialindex
 ```
 
 ### 3. Nginx konfigurieren
