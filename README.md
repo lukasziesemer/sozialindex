@@ -48,7 +48,7 @@ git clone https://github.com/lukasziesemer/sozialindex.git /var/www/sozialindex
 cat > /etc/nginx/sites-available/sozialindex <<'EOF'
 server {
     listen 80;
-    server_name sozialindex.lukas-ziesemer.de;
+    server_name sozialindex.example.de;
 
     root /var/www/sozialindex;
     index index.html;
@@ -79,12 +79,12 @@ nginx -t && systemctl reload nginx
 
 ### 4. DNS
 
-Einen A-Record für `sozialindex.lukas-ziesemer.de` auf die Server-IP setzen.
+Einen A-Record für `sozialindex.example.de` auf die Server-IP setzen.
 
 ### 5. SSL mit Let's Encrypt
 
 ```bash
-certbot --nginx -d sozialindex.lukas-ziesemer.de
+certbot --nginx -d sozialindex.example.de
 ```
 
 ### 6. Updates deployen
